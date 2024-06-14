@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeMain } from './HomeStyles';
+import HomeMain from './HomeStyles';
 import About from './About/About';
 import Differential from './Differential/Differential';
 import Maintenance from './Maintenance/Maintenance';

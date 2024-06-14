@@ -3,7 +3,7 @@ import { MainContainer, ValuesMainContainer } from './AboutStyles';
 
 export default function About() {
   return (
-    <MainContainer>
+    <MainContainer id="about">
       <div className="about-main-container">
         <div className="paragraph-container">
           <h1 className="title">RCE, uma história de inovação e qualidade.</h1>
@@ -17,7 +17,8 @@ export default function About() {
             preventiva, corretiva, atualizações e reforma em seus elevadores.
           </p>
           <p className="paragraph">
-            Acreditamos que a qualidade em atendimento, segurança e preço justo deve caminhar juntos.
+            Acreditamos que a qualidade em atendimento,
+            segurança e preço justo deve caminhar juntos.
           </p>
           <p className="paragraph">Acumulando mais de 15 anos de experiência e conhecimento no mercado, somos uma empresa especializada em prestação de serviço e mão de obra em reforma estética de cabines, modernização de equipamentos e manutenção de elevadores com atendimento rápido e eficiente, atuamos na decoração de cabinas de elevadores, apresentando novos projetos, novas técnicas e design de interiores sem alteração da sua estrutura original, deixando a como nova, valorizando o edifício seja ele comercial ou residencial.</p>
         </div>

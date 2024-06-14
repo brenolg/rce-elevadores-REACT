@@ -4,38 +4,33 @@ import { desktopSectionPadding } from '../../../styles/GlobalStyles';
 
 const MainContainer = styled.section`
   width: 100%;
-  padding: 3rem;
+  padding: 6rem;
   ${desktopSectionPadding}
   background-color: ${(props) => props.theme.colors.White};
   
-.title {
-  font-size: 3.6rem;
-  font-weight: bold;
-  color: ${(props) => props.theme.colors.DarkBlue};
-  margin-bottom: 2rem;
-}
-.divider {
-  width: 100%;
-  height: 2px;
-  border-radius: 2px;
-  background-color: ${(props) => props.theme.colors.DarkGray};
-  margin-bottom: 2rem;
-}
-.about-main-container {
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: 1fr 1fr;
-}
-.paragraph-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  margin-bottom: 6rem;
-}
-.paragraph {
-    font-size: 2rem;
+  .title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: ${(props) => props.theme.colors.Blue};
+    margin-bottom: 2rem;
+    letter-spacing: 0.08rem;
+  }
+  .about-main-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .paragraph {
+    font-size: 1.8rem;
     text-align: justify;
-    line-height: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
     color: ${(props) => props.theme.colors.DarkGray};
   }
 `;
@@ -61,21 +56,21 @@ const ValuesMainContainer = styled.div`
     transform: translateY(-50%);
     background-image: url(${background});
     background-size: cover;
-    background-position: left ;
+    background-position: left;
     border-radius: 1rem;
     left: 0;
     z-index: 1;
   }
 .values-sub-container {
   padding: 3rem;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   position: relative;
   width: 100%;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   color: ${(props) => props.theme.colors.DarkGray};
   transition: all 0.3s;
   z-index: 2;
-  background-color: ${(props) => props.theme.colors.White};
+  background-color: ${(props) => props.theme.colors.LightGray};
 }
 .values-sub-container:hover {
   background-color: ${(props) => props.theme.colors.Blue};
@@ -86,12 +81,12 @@ const ValuesMainContainer = styled.div`
 .value-title {
   font-size: 2rem;
   font-weight: bold;
-  padding:  0 2rem;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 .value-text {
   font-size: 1.6rem;
-
+  letter-spacing: 0.05rem;
   text-align: center;
   font-weight: 500;
 }

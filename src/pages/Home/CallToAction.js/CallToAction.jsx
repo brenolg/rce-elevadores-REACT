@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useState, useRef } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { Link } from 'react-scroll';
 import {
   MainContainer, FirstContainer, SecondContainer, ThirdContainer,
 } from './CallToActionStyles';
@@ -23,6 +25,14 @@ export default function CallToAction() {
     }
   };
 
+  const defaultScrollProps = {
+    spy: true,
+    smooth: 'easeInOutQuart',
+    duration: 900,
+    offset: -114,
+    delay: 300,
+  };
+
   function getCircleColor(section) {
     return section === currentCardIndex ? theme.colors.DarkBlue : theme.colors.LightBlue;
   }
@@ -31,14 +41,33 @@ export default function CallToAction() {
 
       <div id="wrapper">
         <div id="carousel" ref={carouselRef}>
+
           <FirstContainer>
             <p>Assistência técnica e</p>
             <h1>MANUTENÇÃO DE ELEVADORES</h1>
-
-            <button type="button" className="button">Saiba mais</button>
+            <Link to="services" className="link-scroll" {...defaultScrollProps}>
+              <button type="button" className="call-to-action-btn">SAIBA MAIS</button>
+            </Link>
+            <div className="bg-call-to-action" />
           </FirstContainer>
-          <SecondContainer><h1>SEGURANÇA & TRANQUILIDADE</h1></SecondContainer>
-          <ThirdContainer><h1>EFICIÊNCIA & COMPROMETIMENTO</h1></ThirdContainer>
+
+          <SecondContainer>
+            <p>Profissionalismo e</p>
+            <h1>SEGURANÇA & TRANQUILIDADE</h1>
+            <Link to="about" className="link-scroll" {...defaultScrollProps}>
+              <button type="button" className="call-to-action-btn">SAIBA MAIS</button>
+            </Link>
+            <div className="bg-call-to-action" />
+          </SecondContainer>
+
+          <ThirdContainer>
+            <p>Conhecimento técnico e</p>
+            <h1>EFICIÊNCIA & COMPROMETIMENTO</h1>
+            <Link to="diferenciais" className="link-scroll" {...defaultScrollProps}>
+              <button type="button" className="call-to-action-btn">SAIBA MAIS</button>
+            </Link>
+            <div className="bg-call-to-action" />
+          </ThirdContainer>
         </div>
       </div>
 

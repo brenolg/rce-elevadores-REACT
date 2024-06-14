@@ -4,8 +4,4 @@ const HomeMain = styled.main`
 width: 100%;
 `;
 
-const ContactContainer = styled.section`
-
-`;
-
-export { HomeMain, ContactContainer };
+export default HomeMain;

@@ -3,7 +3,7 @@ import { MainContainer } from './DifferentialStyles';
 
 export default function Differential() {
   return (
-    <MainContainer>
+    <MainContainer id="diferenciais">
       <div className="differential-bg" />
       <h2 className="differential-title">Diferenciais</h2>
       <div className="differential-cards-container">

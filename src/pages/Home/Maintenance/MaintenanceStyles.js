@@ -11,8 +11,9 @@ flex-direction: column;
 background-color: ${(props) => props.theme.colors.White};
 .service-title {
   font-size: 3.6rem;
-    font-weight: bold;
-    color: #0D2740;
+  font-weight: bold;
+  color: ${(props) => props.theme.colors.Blue};
+  letter-spacing: 0.08rem;
 }
 
 `;
@@ -20,28 +21,43 @@ background-color: ${(props) => props.theme.colors.White};
 const MaintenanceContainer = styled.div`
   width: 100%;
   display: flex;
-  gap: 3rem;
+  gap : 2rem;
+
 .card-container {flex-direction: column;
   display: flex;
-  gap: 2rem;
   width: 33%;
+  border-radius: 1.6rem;
+  box-shadow: 0 0 3rem #02102450;
+  transition: transform 0.6s;
+}
+.card-container:hover {
+  transform: scale(1.03);
 }
 .card-img {
     width: 100%;
-    height: 20rem;
-    border-radius: 0.8rem;
+    border-radius: 1.6rem;
 }
 .card-title {
   font-size: 2rem;
   text-align: center;
-  color: ${(props) => props.theme.colors.DarkBlue};
+   color: ${(props) => props.theme.colors.Blue};
+     letter-spacing: 0.06rem;
+     padding-top: 1.6rem;
+     padding-bottom: 0.8rem;
+     padding-left: 0.8rem;
+      padding-right: 0.8rem;
+     
 }
 .card-txt {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: ${(props) => props.theme.colors.DarkGray};
     text-align: justify;
     line-height: 150%;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 `;

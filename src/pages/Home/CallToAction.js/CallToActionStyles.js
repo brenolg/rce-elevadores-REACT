@@ -1,12 +1,14 @@
 import styled from 'styled-components';
-import elevator from '../../../assets/elevators.jpg';
+import bg1 from '../../../assets/callToAction1.png';
+import bg2 from '../../../assets/callToAction2.jpg';
+import bg3 from '../../../assets/callToAction3.jpg';
 
 const MainContainer = styled.section`
-width: 100vw; 
+width: 100%; 
 height: calc(100vh - 12rem);
 position: relative;
 #wrapper {
-    width: 100vw;
+    width: 100%;
 }
 #carousel {
     position: relative;
@@ -24,23 +26,29 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all.3s;
     .icon {
         width: 30px;
         height: 30px;
         color: ${(props) => props.theme.colors.White};
     }
 }
+.forward-button:hover, .return-button:hover {
+    background: ${(props) => props.theme.colors.DarkBlue};
+}
 .return-button{
     position: absolute;
-    left: 5.6rem;
+    left: 8rem;
     transform: translateY(-50%);
+    z-index: 2;
     img{
         margin-right: 3px;
     }
 }
 .forward-button  {
-    right: 5.6rem;
+    right: 8rem;
     transform: translateY(-50%);
+    z-index: 2;
     img{
         transform: rotate(180deg);
         margin-left: 3px;
@@ -62,118 +70,76 @@ position: relative;
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    box-shadow: 0 0 0.5rem  rgba(0, 0, 0, 0.6);
 }
 `;
 
-const FirstContainer = styled.div`
-width: 100vw;
-height: calc(100vh - 12rem);
-flex-shrink: 0;
-background-image: url(${elevator});
-background-size: cover;
-background-position: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-p{
-    width: fit-content;
-    font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.DarkGray};
-}
-h1{
-    font-size: 3.2rem;
-    width: fit-content;
-    color: ${(props) => props.theme.colors.DarkBlue};
-}
-button{
-    width: 10rem;
-    height: 3rem;
-    background-color: ${(props) => props.theme.colors.Blue};
-    color: ${(props) => props.theme.colors.White};
-    border-radius: 5px;
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    &:hover{
-        background-color: ${(props) => props.theme.colors.DarkBlue};
+const callToAction = styled.div`
+    width: 100vw;
+    height: calc(100vh - 15.88rem);
+    flex-shrink: 0;
+    background-image: url(${bg1});
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .bg-call-to-action{
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
     }
-}
+    p{
+        width: fit-content;
+        font-size: 1.8rem;
+        color: ${(props) => props.theme.colors.White};
+        position: relative;
+        margin-bottom: 0.6rem;
+        z-index: 2;
+        text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+    }
+    h1{
+        font-size: 3.2rem;
+        width: fit-content;
+        letter-spacing: 0.15rem;
+        color: ${(props) => props.theme.colors.White};
+        position: relative;
+        z-index: 2;
+        text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+    }
+    .call-to-action-btn{
+        padding: 0.6em 0.8em ;
+        background-color: ${(props) => props.theme.colors.Blue};
+        color: ${(props) => props.theme.colors.White};
+        border-radius: 1rem;
+        font-size: 2rem;
+        margin-top: 6rem;
+        border: 0.1rem solid ${(props) => props.theme.colors.White};
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 0 0.5rem  rgba(0, 0, 0, 0.5);
+        &:hover{
+            background-color: ${(props) => props.theme.colors.DarkBlue};
+    }
+    }
+`;
+
+const FirstContainer = styled(callToAction)`
+    background-image: url(${bg1});
+`;
+const SecondContainer = styled(callToAction)`
+    background-image: url(${bg2});
 
 `;
-const SecondContainer = styled.div`
-width: 100vw;
-height: calc(100vh - 12rem);
-flex-shrink: 0;
-background-image: url(${elevator});
-background-size: cover;
-background-position: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+const ThirdContainer = styled(callToAction)`
+    background-image: url(${bg3});
 
-p{
-    width: fit-content;
-    font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.DarkGray};
-}
-h1{
-    font-size: 3.2rem;
-    width: fit-content;
-    color: ${(props) => props.theme.colors.DarkBlue};
-}
-button{
-    width: 10rem;
-    height: 3rem;
-    background-color: ${(props) => props.theme.colors.Blue};
-    color: ${(props) => props.theme.colors.White};
-    border-radius: 5px;
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    &:hover{
-        background-color: ${(props) => props.theme.colors.DarkBlue};
-    }
-}
-
-`;
-const ThirdContainer = styled.div`
-width: 100vw;
-height: calc(100vh - 12rem);
-flex-shrink: 0;
-background-image: url(${elevator});
-background-size: cover;
-background-position: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-p{
-    width: fit-content;
-    font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.DarkGray};
-}
-h1{
-    font-size: 3.2rem;
-    width: fit-content;
-    color: ${(props) => props.theme.colors.DarkBlue};
-}
-button{
-    width: 10rem;
-    height: 3rem;
-    background-color: ${(props) => props.theme.colors.Blue};
-    color: ${(props) => props.theme.colors.White};
-    border-radius: 5px;
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    &:hover{
-        background-color: ${(props) => props.theme.colors.DarkBlue};
-    }
-}
 `;
 
 export {

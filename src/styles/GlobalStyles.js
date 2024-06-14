@@ -12,7 +12,6 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     width: 100vw;
-    min-height: 300vh;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
   }
@@ -25,11 +24,29 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+  ::-webkit-scrollbar {
+  background: #C0C4C4;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #052659;
+  border-radius: 0.3rem;
+  height: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100%;
+}
 `;
 
 const desktopSectionPadding = css`
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
 `;
 
 export { GlobalStyles, desktopSectionPadding };
