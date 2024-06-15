@@ -1,5 +1,6 @@
 {
   "name": "rce-elevadores",
+  "homepage": "https://brenolg.github.io/rce-elevadores-REACT",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.0.6",
@@ -16,10 +19,11 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.22.1",
     "react-scroll": "^1.9.0",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-css": "^0.7.0",
@@ -28,6 +32,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4"
+    "gh-pages": "^6.1.1"
   }
 }
