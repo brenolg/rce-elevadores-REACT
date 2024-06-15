@@ -9,8 +9,8 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
+        <Route path="rce-elevadores-REACT" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/x" element={<Home />} />
       </Routes>
     </AnimatePresence>
   );
