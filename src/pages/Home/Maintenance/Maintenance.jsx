@@ -41,7 +41,7 @@ export default function Maintenance() {
           </p>
         </div>
         <div className="card-container">
-          <img className="card-img" src={manutenção3} alt="elevator" />
+          <img className="card-img" src={manutenção6} alt="elevator" />
           <h2 className="card-title">MODERNIZAÇÃO</h2>
           <p className="card-txt">
             Mesmo com as manutenções preventiva e
@@ -56,37 +56,6 @@ export default function Maintenance() {
             melhorando na eficiência de todo funcionamento
             dos elevadores.
           </p>
-        </div>
-      </MaintenanceContainer>
-      <MaintenanceContainer>
-        <div className="card-container">
-          <img className="card-img" src={manutenção4} alt="elevator" />
-          <h2 className="card-title">CONSERTO / REPARO DE PLACAS</h2>
-          <p className="card-txt">
-            Fazemos reparos em placas eletrônicas e inversores
-            de frequência, visando a redução de custos ao condomínio.
-            Não deixe de fazer sua cotação com a Lion Elevadores. Entre em contato agora mesmo.
-          </p>
-        </div>
-        <div className="card-container">
-          <img className="card-img" src={manutenção5} alt="elevator" />
-          <h2 className="card-title">LIMPEZA TÉCNICA</h2>
-          <p className="card-txt">
-            A limpeza técnica em elevadores conserva a vida
-            útil do equipamento sem gerar transtornos/gastos
-            futuros, possibilitando assim o melhor funcionamento para o seu equipamento.
-          </p>
-        </div>
-        <div className="card-container">
-          <img className="card-img" src={manutenção6} alt="elevator" />
-          <h2 className="card-title">ASSESSORIA</h2>
-          <p className="card-txt">
-            Contamos com assessores que possuem vasta
-            experiência em diversas marcas de equipamentos.
-            Oferecemos: Emissão de laudos técnicos, acompanhamento
-            técnico, modernização e muito mais.
-          </p>
-
         </div>
       </MaintenanceContainer>
     </MainContainer>

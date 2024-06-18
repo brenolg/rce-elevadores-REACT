@@ -59,7 +59,9 @@ export default function Header() {
       </FixedContainer>
 
       <StickyContainer>
-        <img src={logo} alt="logo" className="logo-header" />
+        < Link to="call-to-action" className="link-scroll" {...defaultScrollProps}>
+          <img src={logo} alt="logo" className="logo-header" />
+        </Link>
         <nav className="header-nav">
           <Link to="about" className="link-scroll" {...defaultScrollProps}>
             Quem somos

@@ -19,6 +19,14 @@ const FixedContainer = styled.header`
   }
   padding-left: 18rem;
   padding-right: 18rem;
+  @media screen  and (max-width: 1300px) {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+  }
 `;
 const StickyContainer = styled.header`
   background-color: ${(props) => props.theme.colors.DarkBlue};
@@ -47,10 +55,28 @@ const StickyContainer = styled.header`
   }
   .header-nav {
     display: flex;
-    gap: 3.2rem;
+    gap: 6rem;
   }
   .link-scroll {
     cursor: pointer;
+  }
+  @media screen  and (max-width: 1300px) {
+    justify-content: center;
+    gap: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @media screen  and (max-width: 700px) {
+    gap: 3rem;
+    .header-nav {
+      display: flex;
+      gap: 3rem;
+    }
+  }
+  @media screen  and (max-width: 600px) {
+    .header-nav {
+      display: none;
+    }
   }
 `;
 

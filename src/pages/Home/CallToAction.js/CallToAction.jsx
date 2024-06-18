@@ -37,7 +37,7 @@ export default function CallToAction() {
     return section === currentCardIndex ? theme.colors.DarkBlue : theme.colors.LightBlue;
   }
   return (
-    <MainContainer>
+    <MainContainer id='call-to-action'>
 
       <div id="wrapper">
         <div id="carousel" ref={carouselRef}>

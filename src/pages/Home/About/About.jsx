@@ -9,18 +9,13 @@ export default function About() {
           <h1 className="title">RCE, uma história de inovação e qualidade.</h1>
 
           <p className="paragraph">
-            RCE elevadores empresa desde os ano de 2000,
-            suporte técnico com experiencia de mais de 40 anos em elevadores.
+            A RCE ELEVADORES é uma empresa sólida no mercado a mais de 23 anos, composta por um corpo técnico com grande bagagem de experiência em elevadores de diversas marcas.
+
           </p>
           <p className="paragraph">
-            Atuando em prestação de serviços de manutenção
-            preventiva, corretiva, atualizações e reforma em seus elevadores.
+            Atua em prestar serviços de manutenção preventiva, corretiva, atualização e estética em seu(s) elevador(es). Acreditamos que QUALIDADE em atendimento, SEGURANÇA e PREÇO justo devem caminhar juntos.
           </p>
-          <p className="paragraph">
-            Acreditamos que a qualidade em atendimento,
-            segurança e preço justo deve caminhar juntos.
-          </p>
-          <p className="paragraph">Acumulando mais de 15 anos de experiência e conhecimento no mercado, somos uma empresa especializada em prestação de serviço e mão de obra em reforma estética de cabines, modernização de equipamentos e manutenção de elevadores com atendimento rápido e eficiente, atuamos na decoração de cabinas de elevadores, apresentando novos projetos, novas técnicas e design de interiores sem alteração da sua estrutura original, deixando a como nova, valorizando o edifício seja ele comercial ou residencial.</p>
+        
         </div>
 
         <ValuesMainContainer>
@@ -29,24 +24,19 @@ export default function About() {
             <div className="values-sub-container">
               <h2 className="value-title">Missão</h2>
               <p className="value-text">
-                Transportar pessoas e materiais com
-                agilidade, facilidade e segurança. Fornecer acessibilidade a todas as pessoas.
+                Garantir segurança e conforto na utilização de elevadores, com custos adequados.
               </p>
             </div>
             <div className="values-sub-container">
               <h2 className="value-title">Visão</h2>
               <p className="value-text">
-                Ser referência em atendimento de qualidade,
-                tecnologia e segurança no ramo de Elevadores em
-                Minas Gerais e expandir o alcance para todo o Brasil.
+              Ser uma empresa reconhecida no mercado nacional de elevadores, soluções para transporte vertical, acessibilidade e confiança.
               </p>
             </div>
             <div className="values-sub-container">
               <h2 className="value-title">Valores</h2>
               <p className="value-text">
-                Cuidar da sua Segurança! Atender as necessidades
-                de nossos clientes e parceiros com responsabilidade,
-                integridade e ética.
+                Comprometimento, ética, inovação e transparência.
               </p>
 
             </div>

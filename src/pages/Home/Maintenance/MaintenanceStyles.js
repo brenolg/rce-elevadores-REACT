@@ -15,6 +15,9 @@ background-color: ${(props) => props.theme.colors.White};
   color: ${(props) => props.theme.colors.Blue};
   letter-spacing: 0.08rem;
 }
+  @media screen and (max-width: 1000px) { 
+    padding: 3rem;
+  }
 
 `;
 
@@ -23,7 +26,8 @@ const MaintenanceContainer = styled.div`
   display: flex;
   gap : 2rem;
 
-.card-container {flex-direction: column;
+.card-container {
+  flex-direction: column;
   display: flex;
   width: 33%;
   border-radius: 1.6rem;
@@ -59,7 +63,12 @@ const MaintenanceContainer = styled.div`
     padding-right: 2rem;
     padding-bottom: 2rem;
 }
-
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  .card-container {
+      width: 100%;
+    }
+    }
 `;
 
 export { MainContainer, MaintenanceContainer };

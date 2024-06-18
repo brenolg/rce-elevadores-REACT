@@ -25,6 +25,16 @@ const MainContainer = styled.button`
     width: 3.6rem;
     height: 3.6rem;
   }
+  @media screen and (max-width: 840px) {
+    bottom: 3rem;
+    right: 3rem;
+    padding: 1.2rem;
+    .icon {
+      width: 2rem;
+      height: 2rem;
+    }
+    
+  }
 `;
 
 export default MainContainer;

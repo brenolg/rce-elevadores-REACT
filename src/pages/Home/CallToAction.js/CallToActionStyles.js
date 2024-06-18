@@ -5,7 +5,7 @@ import bg3 from '../../../assets/callToAction3.jpg';
 
 const MainContainer = styled.section`
 width: 100%; 
-height: calc(100vh - 12rem);
+height: calc(100vh - 15.88rem);
 position: relative;
 #wrapper {
     width: 100%;
@@ -72,6 +72,22 @@ position: relative;
     border-radius: 50%;
     box-shadow: 0 0 0.5rem  rgba(0, 0, 0, 0.6);
 }
+@media screen and (max-width: 840px) {
+    .forward-button  {
+    right: 5%;
+    }
+    .return-button {
+    left: 5%;
+    }
+}
+   @media screen and (max-width: 650px) {
+        .forward-button  {
+    right: 5%;
+    }
+    .return-button {
+    left: 3%;
+    }
+   }
 `;
 
 const callToAction = styled.div`
@@ -128,6 +144,27 @@ const callToAction = styled.div`
             background-color: ${(props) => props.theme.colors.DarkBlue};
     }
     }
+    @media screen and (max-width: 840px) {
+        h1 {
+            font-size: 2.8rem;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        h1 {
+            font-size: 2rem;
+            max-width: 70%;
+            text-align: center;
+        }
+        p {
+            font-size: 1.4rem;
+            max-width: 70%;
+            text-align: center;
+        }
+        .call-to-action-btn{
+        font-size: 1.6rem;
+        }
+    }
+     
 `;
 
 const FirstContainer = styled(callToAction)`
@@ -135,11 +172,9 @@ const FirstContainer = styled(callToAction)`
 `;
 const SecondContainer = styled(callToAction)`
     background-image: url(${bg2});
-
 `;
 const ThirdContainer = styled(callToAction)`
     background-image: url(${bg3});
-
 `;
 
 export {

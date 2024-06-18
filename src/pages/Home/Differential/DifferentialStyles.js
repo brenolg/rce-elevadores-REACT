@@ -6,6 +6,8 @@ const MainContainer = styled.section`
   width: 100%;
   position: relative;
   background-image: url(${elevators});
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   padding: 6rem;
   display: flex;
@@ -65,6 +67,13 @@ const MainContainer = styled.section`
     background-color: ${(props) => props.theme.colors.Blue};
     opacity: 0.7;
     z-index: 1;
+  }
+  @media screen and (max-width: 1000px){
+    padding: 3rem;
+    .differential-cards-container {
+      grid-template-columns: 1fr;
+    }
+    
   }
 `;
 

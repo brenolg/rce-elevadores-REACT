@@ -30,6 +30,13 @@ const MainContainer = styled.footer`
     position: relative;
     z-index: 2;
   }
+   @media screen and (max-width: 1000px){
+     .logo-contact-us {
+      display: none;
+     }
+    
+    
+  }
 `;
 
 const NavContainer = styled.nav`
@@ -44,6 +51,10 @@ const NavContainer = styled.nav`
   gap: 0.8rem;
   font-size: 1.6rem;
   align-items: center;
+  }
+  @media screen and (max-width: 1000px){
+
+    
   }
 `;
 

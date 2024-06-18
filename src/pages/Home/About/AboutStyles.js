@@ -33,6 +33,16 @@ const MainContainer = styled.section`
     font-weight: 500;
     color: ${(props) => props.theme.colors.DarkGray};
   }
+  @media screen and (max-width: 1000px) {
+    padding: 3rem;
+    .about-main-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr ;
+  }
+
+    
+  }
 `;
 
 const ValuesMainContainer = styled.div`
@@ -90,6 +100,27 @@ const ValuesMainContainer = styled.div`
   text-align: center;
   font-weight: 500;
 }
+@media screen and (max-width: 1000px) {
+    .values-main-container {
+      flex-direction: row;
+      width: 100%;
+    }
+    .values-sub-container {
+      width: 30%;
+    
+    }
+    
+}
+@media screen and (max-width: 750px) {
+
+ .values-main-container {
+  flex-direction: column;
+  gap: 3rem;
+  display: none;
+ }
+ .values-sub-container {
+  width: 100%;
+ }}
 `;
 
 export { MainContainer, ValuesMainContainer };
