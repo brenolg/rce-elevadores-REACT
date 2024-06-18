@@ -241,6 +241,8 @@ width: 100%;
   width: 100%;
   position: relative;
   background-image: url(${S1});
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   padding: 6rem;
   display: flex;
@@ -693,5 +695,15 @@ position: relative;
   .icon {
     width: 3.6rem;
     height: 3.6rem;
+  }
+  @media screen and (max-width: 840px) {
+    bottom: 3rem;
+    right: 3rem;
+    padding: 1.2rem;
+    .icon {
+      width: 2rem;
+      height: 2rem;
+    }
+    
   }
 `;function aS(){return g.jsx(lS,{children:g.jsx(ms,{className:"icon"})})}function uS(){return g.jsx(K0,{children:g.jsxs(Yg,{theme:ru,children:[g.jsx(iS,{}),g.jsx(aS,{}),g.jsx(nS,{})]})})}Xl.createRoot(document.getElementById("root")).render(g.jsxs(re.StrictMode,{children:[g.jsx(v1,{}),g.jsx(uS,{})]}));
