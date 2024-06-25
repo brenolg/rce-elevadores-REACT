@@ -1,11 +1,8 @@
 import React from 'react';
 import { MainContainer, MaintenanceContainer } from './MaintenanceStyles';
-import manutenção1 from '../../../assets/manutenção1.jpg';
-import manutenção2 from '../../../assets/manutenção2.jpg';
-import manutenção3 from '../../../assets/manutenção3.jpg';
-import manutenção4 from '../../../assets/manutenção4.jpg';
-import manutenção5 from '../../../assets/manutenção5.jpg';
-import manutenção6 from '../../../assets/manutenção6.jpg';
+import manutencao1 from '../../../assets/manutencao1.jpg';
+import manutencao2 from '../../../assets/manutencao2.jpg';
+import manutencao6 from '../../../assets/manutencao6.jpg';
 
 export default function Maintenance() {
   return (
@@ -15,7 +12,7 @@ export default function Maintenance() {
 
       <MaintenanceContainer>
         <div className="card-container">
-          <img className="card-img" src={manutenção1} alt="elevator" />
+          <img className="card-img" src={manutencao1} alt="elevator" />
           <h2 className="card-title">MANUTENÇÃO PREVENTIVA</h2>
           <p className="card-txt">
             Com o objetivo de proporcionar total segurança e
@@ -28,7 +25,7 @@ export default function Maintenance() {
           </p>
         </div>
         <div className="card-container">
-          <img className="card-img" src={manutenção2} alt="elevator" />
+          <img className="card-img" src={manutencao2} alt="elevator" />
           <h2 className="card-title">MANUTENÇÃO CORRETIVA</h2>
           <p className="card-txt">
             A RCE Elevadores garante os melhores
@@ -41,7 +38,7 @@ export default function Maintenance() {
           </p>
         </div>
         <div className="card-container">
-          <img className="card-img" src={manutenção6} alt="elevator" />
+          <img className="card-img" src={manutencao6} alt="elevator" />
           <h2 className="card-title">MODERNIZAÇÃO</h2>
           <p className="card-txt">
             Mesmo com as manutenções preventiva e
