@@ -7,87 +7,90 @@ const MainContainer = styled.section`
 width: 100%; 
 height: calc(100vh - 15.88rem);
 position: relative;
-#wrapper {
-    width: 100%;
-}
-#carousel {
-    position: relative;
-    overflow: hidden; 
-    display: flex;
-    justify-content: flex-start;
-}
-.return-button, .forward-button {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 47%;
-    border-radius: 360px;
-    background: ${(props) => props.theme.colors.Blue};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all.3s;
-    .icon {
-        width: 30px;
-        height: 30px;
-        color: ${(props) => props.theme.colors.White};
+    #wrapper {
+        width: 100%;
     }
-}
-.forward-button:hover, .return-button:hover {
-    background: ${(props) => props.theme.colors.DarkBlue};
-}
-.return-button{
-    position: absolute;
-    left: 8rem;
-    transform: translateY(-50%);
-    z-index: 2;
-    img{
-        margin-right: 3px;
+    #carousel {
+        position: relative;
+        overflow: hidden; 
+        display: flex;
+        justify-content: flex-start;
     }
-}
-.forward-button  {
-    right: 8rem;
-    transform: translateY(-50%);
-    z-index: 2;
-    img{
-        transform: rotate(180deg);
-        margin-left: 3px;
+    .return-button, .forward-button {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 47%;
+        border-radius: 360px;
+        background: ${(props) => props.theme.colors.Blue};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all.3s;
+        .icon {
+            width: 30px;
+            height: 30px;
+            color: ${(props) => props.theme.colors.White};
+        }
     }
-}
-.counter {
-    position: absolute;
-    bottom: 4.8rem;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    position: relative;
-    z-index: 5;
-}
-.counter-circle {
-    transition: background-color 0.3s;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    box-shadow: 0 0 0.5rem  rgba(0, 0, 0, 0.6);
-}
-@media screen and (max-width: 840px) {
+    .forward-button:hover, .return-button:hover {
+        background: ${(props) => props.theme.colors.DarkBlue};
+    }
+    .return-button{
+        position: absolute;
+        left: 8rem;
+        transform: translateY(-50%);
+        z-index: 2;
+        img{
+            margin-right: 3px;
+        }
+    }
     .forward-button  {
-    right: 5%;
+        right: 8rem;
+        transform: translateY(-50%);
+        z-index: 2;
+        img{
+            transform: rotate(180deg);
+            margin-left: 3px;
+        }
     }
-    .return-button {
-    left: 5%;
+    .counter {
+        position: absolute;
+        bottom: 4.8rem;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        position: relative;
+        z-index: 5;
     }
-}
-   @media screen and (max-width: 650px) {
+    .counter-circle {
+        transition: background-color 0.3s;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        box-shadow: 0 0 0.5rem  rgba(0, 0, 0, 0.6);
+    }
+    @media screen and (max-width: 840px) {
         .forward-button  {
-    right: 5%;
+        right: 5%;
+        }
+        .return-button {
+        left: 5%;
+        }
     }
-    .return-button {
-    left: 3%;
+    @media screen and (max-width: 650px) {
+        .forward-button  {
+            right: 5%;
+        }
+        .return-button {
+            left: 3%;
+        }
+        .forward-button:hover, .return-button:hover {
+            background: ${(props) => props.theme.colors.Blue};
+        }
     }
-   }
 `;
 
 const callToAction = styled.div`
@@ -164,7 +167,6 @@ const callToAction = styled.div`
         font-size: 1.6rem;
         }
     }
-     
 `;
 
 const FirstContainer = styled(callToAction)`

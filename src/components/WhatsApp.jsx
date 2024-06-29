@@ -4,7 +4,11 @@ import MainContainer from './WhatsAppStyles';
 
 export default function WhatsApp() {
   return (
-    <MainContainer>
+    <MainContainer   
+      href="https://wa.me/5531988351557"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <BsWhatsapp className="icon" />
     </MainContainer>
   );

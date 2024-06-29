@@ -32,6 +32,9 @@ const MainContainer = styled.section`
     letter-spacing: 0.05rem;
     font-weight: 500;
     color: ${(props) => props.theme.colors.DarkGray};
+    span {
+      font-weight: bold;
+    }
   }
   @media screen and (max-width: 1000px) {
     padding: 3rem;

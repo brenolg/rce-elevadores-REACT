@@ -9,11 +9,12 @@ export default function About() {
           <h1 className="title">RCE, uma história de inovação e qualidade.</h1>
 
           <p className="paragraph">
-            A RCE ELEVADORES é uma empresa sólida no mercado a mais de 23 anos, composta por um corpo técnico com grande bagagem de experiência em elevadores de diversas marcas.
+            A RCE ELEVADORES é uma empresa sólida no mercado a 
+            <span> mais de 24 anos</span>, composta por um corpo técnico com grande experiência em elevadores de diversas marcas.
 
           </p>
           <p className="paragraph">
-            Atua em prestar serviços de manutenção preventiva, corretiva, atualização e estética em seu(s) elevador(es). Acreditamos que QUALIDADE em atendimento, SEGURANÇA e PREÇO justo devem caminhar juntos.
+            Atua em prestar serviços de manutenção preventiva, corretiva, atualização e estética em seu elevador. Acreditamos que QUALIDADE em atendimento, SEGURANÇA e PREÇO justo devem caminhar juntos.
           </p>
         
         </div>

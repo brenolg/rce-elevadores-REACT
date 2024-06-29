@@ -17,10 +17,10 @@ export default function Maintenance() {
           <p className="card-txt">
             Com o objetivo de proporcionar total segurança e
             conforto aos nossos clientes, nossos técnicos
-            acompanham rigorosamente cada elevador e realizam
-            manutenções para aumentar a vida Ágil dos equipamentos.
+            acompanham rigorosamente cada elevador e realizando
+            manutenção mais eficaz para aumentar a vida util dos equipamentos.
             Mantemos um banco de dados com as informações de cada
-            elevador para acompanharmos cada detalhe e solucionarmos
+            elevador para acompanharmos cada detalhe e solucionar
             de forma mais ágil e segura possível.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function Maintenance() {
             de qualidade realizado por uma equipe técnica muito
             bem preparada. Nossa equipe está altamente capacitada
             para realizar a manutenção corretiva de elevadores de
-            qualquer marca ou modelo.
+            qualquer marca e modelo.
           </p>
         </div>
         <div className="card-container">

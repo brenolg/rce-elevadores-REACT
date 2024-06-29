@@ -21,7 +21,7 @@ export default function ContactUs() {
           target="_blank"
         >
           <BsWhatsapp className="icon" />
-          <p>(31)9988351557</p>
+          <p>(31)988351557</p>
         </a>
         <a
           className="nav-item"

@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import styled from 'styled-components';
 
-const MainContainer = styled.button`
+const MainContainer = styled.a`
   cursor: pointer;
   position: fixed;
   bottom: 6rem;
@@ -9,7 +9,6 @@ const MainContainer = styled.button`
   z-index: 99;
   background-color: transparent;
   color: ${(props) => props.theme.colors.White};
-
   border-radius: 50%;
   padding: 1.8rem;
   display: flex;
@@ -33,7 +32,9 @@ const MainContainer = styled.button`
       width: 2rem;
       height: 2rem;
     }
-    
+    &&:hover {
+      background-color: ${(props) => props.theme.colors.Blue};
+    }
   }
 `;
 
